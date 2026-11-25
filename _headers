@@ -15,3 +15,6 @@
 
 /category/uncategorized/feed/
   Content-Type: application/rss+xml; charset=UTF-8
+
+/passing-times-automation-test/feed/
+  Content-Type: application/rss+xml; charset=UTF-8
