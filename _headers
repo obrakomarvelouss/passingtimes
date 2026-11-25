@@ -1,20 +1,20 @@
-/feed/
+/passingtimes/feed/
   Content-Type: application/rss+xml; charset=UTF-8
 
-/comments/feed/
+/passingtimes/comments/feed/
   Content-Type: application/rss+xml; charset=UTF-8
 
-/hello-world/feed/
+/passingtimes/hello-world/feed/
   Content-Type: application/rss+xml; charset=UTF-8
 
-/sample-page/feed/
+/passingtimes/sample-page/feed/
   Content-Type: application/rss+xml; charset=UTF-8
 
-/author/waylord/feed/
+/passingtimes/author/waylord/feed/
   Content-Type: application/rss+xml; charset=UTF-8
 
-/category/uncategorized/feed/
+/passingtimes/category/uncategorized/feed/
   Content-Type: application/rss+xml; charset=UTF-8
 
-/passing-times-automation-test/feed/
+/passingtimes/passing-times-automation-test/feed/
   Content-Type: application/rss+xml; charset=UTF-8
