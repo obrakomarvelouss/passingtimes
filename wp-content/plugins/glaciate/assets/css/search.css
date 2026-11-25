@@ -1,0 +1,100 @@
+/**
+ * Static search dialog. Loaded by search.js the first time the dialog opens. Inherits the theme's font and uses
+ * system colors, so it follows the page's light or dark scheme.
+ */
+.glaciate-search {
+	box-sizing: border-box;
+	width: min(42rem, calc(100vw - 2rem));
+	max-height: min(40rem, calc(100vh - 4rem));
+	margin: 2rem auto auto;
+	padding: 0;
+	border: 1px solid GrayText;
+	border-radius: 0.5rem;
+	background: Canvas;
+	color: CanvasText;
+	font: inherit;
+	overflow: auto;
+}
+
+.glaciate-search::backdrop {
+	background: rgb(0 0 0 / 0.4);
+}
+
+.glaciate-search__form {
+	position: sticky;
+	top: 0;
+	display: flex;
+	gap: 0.5rem;
+	padding: 1rem;
+	background: Canvas;
+	border-bottom: 1px solid GrayText;
+}
+
+.glaciate-search__input {
+	flex: 1;
+	min-width: 0;
+	padding: 0.5rem 0.75rem;
+	border: 1px solid GrayText;
+	border-radius: 0.25rem;
+	background: Field;
+	color: FieldText;
+	font: inherit;
+}
+
+.glaciate-search__close {
+	padding: 0.5rem 0.75rem;
+	border: 1px solid GrayText;
+	border-radius: 0.25rem;
+	background: ButtonFace;
+	color: ButtonText;
+	font: inherit;
+	cursor: pointer;
+}
+
+.glaciate-search__status {
+	margin: 0;
+	padding: 0.75rem 1rem 0;
+	font-size: 0.875em;
+	opacity: 0.8;
+}
+
+.glaciate-search__status:empty {
+	/* Collapsed, not display: none: a live region must stay in the accessibility tree to have its changes read out. */
+	padding: 0;
+}
+
+.glaciate-search__results {
+	margin: 0;
+	padding: 0.5rem 1rem 1rem;
+	list-style: none;
+}
+
+.glaciate-search__result {
+	padding: 0.75rem 0;
+	border-bottom: 1px solid color-mix(in srgb, GrayText 40%, transparent);
+}
+
+.glaciate-search__result:last-child {
+	border-bottom: 0;
+}
+
+.glaciate-search__result a {
+	color: LinkText;
+	font-weight: 600;
+}
+
+.glaciate-search__result p {
+	margin: 0.25rem 0 0;
+	font-size: 0.9em;
+}
+
+.glaciate-search :focus-visible {
+	/* Themes sometimes remove focus outlines; keyboard users must still see where they are. */
+	outline: 2px solid Highlight;
+	outline-offset: 2px;
+}
+
+.glaciate-search mark {
+	background: Mark;
+	color: MarkText;
+}

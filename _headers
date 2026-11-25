@@ -1,0 +1,17 @@
+/feed/
+  Content-Type: application/rss+xml; charset=UTF-8
+
+/comments/feed/
+  Content-Type: application/rss+xml; charset=UTF-8
+
+/hello-world/feed/
+  Content-Type: application/rss+xml; charset=UTF-8
+
+/sample-page/feed/
+  Content-Type: application/rss+xml; charset=UTF-8
+
+/author/waylord/feed/
+  Content-Type: application/rss+xml; charset=UTF-8
+
+/category/uncategorized/feed/
+  Content-Type: application/rss+xml; charset=UTF-8
